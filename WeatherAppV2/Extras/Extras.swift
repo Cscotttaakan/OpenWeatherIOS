@@ -8,7 +8,7 @@
 
 import Foundation
 
-let API_URL = "https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=4d01fda49d461b6ee0d642809e24dd16"
+let API_URL = "https://api.openweathermap.org/data/2.5/weather?lat=\(Location.sharedInstance.latitude!)&lon=\(Location.sharedInstance.longitude!)&appid=\(APIConstants.weatherKey)"
 
 typealias DownloadComplete = () -> ()
 

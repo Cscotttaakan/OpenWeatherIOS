@@ -15,7 +15,16 @@ struct UIConstants {
 }
 
 //For https://openweathermap.org/current API
+//Look at API to modify JSONConstants
 struct JSONConstants {
     static let city : String = "name"
-    
+    static let currentDate : String = "dt"
+    static let weather : String = "weather"
+    static let weatherType : String = "main"
+    static let main : String = "main"
+    static let temperature : String = "temp"
+}
+
+struct APIConstants {
+    static let weatherKey : String = "4d01fda49d461b6ee0d642809e24dd16"
 }
