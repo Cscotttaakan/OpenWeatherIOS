@@ -1,5 +1,5 @@
 //
-//  CurrentData.swift
+//  CurrentWeather.swift
 //  WeatherAppV2
 //
 //  Created by Craig Scott on 9/20/18.

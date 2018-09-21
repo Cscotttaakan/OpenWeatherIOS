@@ -12,6 +12,7 @@ struct UIConstants {
     static let xcenter : String = "center.x"
     static let ycenter : String = "center.y"
     static let intensity : Double = 45.0
+    static let forecastCellID : String = "ForecastCell"
 }
 
 //For https://openweathermap.org/current API
@@ -23,6 +24,8 @@ struct JSONConstants {
     static let weatherType : String = "main"
     static let main : String = "main"
     static let temperature : String = "temp"
+    static let forecastList : String = "list"
+    static let day : String = "day"
 }
 
 struct APIConstants {
