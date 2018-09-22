@@ -16,6 +16,7 @@ class CurrentWeather {
     private(set) var _date : String?
     private(set) var _weatherType : String?
     private(set) var _currentTemp : Double?
+    private(set) var _weatherID : String?
     
     func downloadCurrentWeather(completed : @escaping DownloadComplete){
         
@@ -36,7 +37,10 @@ class CurrentWeather {
             
             let downloadedTemp = json[JSONConstants.main][JSONConstants.temperature].double
             self._currentTemp = (downloadedTemp! - 273.15).celsiusToFahr().rounded(toPlaces: 0)
-    
+            
+            let id = json[JSONConstants.weather][0][JSONConstants.icon].stringValue
+            self._weatherID = id
+            
             completed()
         }
     }

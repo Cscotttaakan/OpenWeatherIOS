@@ -26,6 +26,7 @@ struct JSONConstants {
     static let temperature : String = "temp"
     static let forecastList : String = "list"
     static let day : String = "day"
+    static let icon : String = "icon"
 }
 
 struct APIConstants {

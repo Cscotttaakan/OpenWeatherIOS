@@ -7,12 +7,12 @@
 //
 
 import Foundation
+import Alamofire
 
 class ForecastWeather {
     private(set) var _date : String?
     private(set) var _temp : Double?
-    private(set) var _weatherType : String?
-    
+    private(set) var _iconID : String?
     
     
     init(weatherDict : [String : Any]){
@@ -28,6 +28,14 @@ class ForecastWeather {
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .medium
             self._date = "\(rawDate.dayOfTheWeek())"
+        }
+        
+        
+        
+        if let list = weatherDict[JSONConstants.weather] as? [[String : Any]] {
+            if let icon = list[0][JSONConstants.icon] as? String {
+                self._iconID = icon
+            }
         }
     }
 }

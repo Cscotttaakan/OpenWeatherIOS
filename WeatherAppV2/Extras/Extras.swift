@@ -13,5 +13,7 @@ let API_URL = "https://api.openweathermap.org/data/2.5/weather?lat=\(Location.sh
 
 let FORECAST_API_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=\(Location.sharedInstance.latitude!)&lon=\(Location.sharedInstance.longitude!)&cnt=8&appid=7c609f73c5df2dff2f32e3e3cc33cd23"
 
+//let WEATHER_ICON_URL = "http://openweathermap.org/img/w/"
+
 typealias DownloadComplete = () -> ()
 

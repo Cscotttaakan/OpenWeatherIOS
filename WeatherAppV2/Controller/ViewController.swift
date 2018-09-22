@@ -131,6 +131,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
                 self.currentCityTemp.text = "\(Int(self.currentWeather._currentTemp!))°"
                 self.currentDate.text = self.currentWeather._date
                 self.weatherType.text = self.currentWeather._weatherType
+                self.weatherImage.image = UIImage(named : self.currentWeather._weatherID!)
             }
         }
         

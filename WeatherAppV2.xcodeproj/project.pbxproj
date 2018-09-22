@@ -15,6 +15,7 @@
 		E10C4A9921549451000A4F84 /* ForecastWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10C4A9821549451000A4F84 /* ForecastWeather.swift */; };
 		E13AFC5021542262004186EE /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13AFC4F21542262004186EE /* Extras.swift */; };
 		E13AFC5221542313004186EE /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13AFC5121542313004186EE /* CurrentWeather.swift */; };
+		E17916142156D9690028E8A4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17916132156D9680028E8A4 /* Utilities.swift */; };
 		E17EE92D2153F0FA008DE1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EE92C2153F0FA008DE1D9 /* AppDelegate.swift */; };
 		E17EE92F2153F0FA008DE1D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EE92E2153F0FA008DE1D9 /* ViewController.swift */; };
 		E17EE9322153F0FA008DE1D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17EE9302153F0FA008DE1D9 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		E10C4A9821549451000A4F84 /* ForecastWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWeather.swift; sourceTree = "<group>"; };
 		E13AFC4F21542262004186EE /* Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
 		E13AFC5121542313004186EE /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		E17916132156D9680028E8A4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "../../../../Downloads/CS193P-iOS11-Lecture-11-12---dragNdrop-TableView-CollectionView-UITextField-master/Lecture 11 - dragNdrop TableView CollectionView/Utilities.swift"; sourceTree = "<group>"; };
 		E17EE9292153F0FA008DE1D9 /* WeatherAppV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17EE92C2153F0FA008DE1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17EE92E2153F0FA008DE1D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		E13AFC4E21542253004186EE /* Extras */ = {
 			isa = PBXGroup;
 			children = (
+				E17916132156D9680028E8A4 /* Utilities.swift */,
 				E13AFC4F21542262004186EE /* Extras.swift */,
 				E10C4A8F21542CCB000A4F84 /* Constants.swift */,
 			);
@@ -279,6 +282,7 @@
 				E10C4A9721548DBC000A4F84 /* ForecastCell.swift in Sources */,
 				E13AFC5021542262004186EE /* Extras.swift in Sources */,
 				E17EE92D2153F0FA008DE1D9 /* AppDelegate.swift in Sources */,
+				E17916142156D9690028E8A4 /* Utilities.swift in Sources */,
 				E10C4A9521544FD6000A4F84 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54CWFH9J2G;
 				INFOPLIST_FILE = WeatherAppV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54CWFH9J2G;
 				INFOPLIST_FILE = WeatherAppV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -99,6 +99,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="forecastDay" destination="QBY-al-qvW" id="b8C-q3-wXn"/>
+                                            <outlet property="forecastIcon" destination="AXI-Z2-ZZl" id="Scj-M8-oHc"/>
                                             <outlet property="forecastTemp" destination="Jov-jM-PkY" id="vIg-NV-mNY"/>
                                         </connections>
                                     </tableViewCell>
