@@ -27,13 +27,14 @@ class CurrentWeather {
             self._cityName = json[JSONConstants.city].stringValue
             self._weatherType = json[JSONConstants.weather][0][JSONConstants.weatherType].stringValue
             
-            let tempDate = json[JSONConstants.currentDate].double
-            let convertedDate = Date(timeIntervalSince1970: tempDate!)
+            if let tempDate = json[JSONConstants.currentDate].double {
+            let convertedDate = Date(timeIntervalSince1970: tempDate)
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .medium
             dateFormatter.timeStyle = .none
             let currentDate = dateFormatter.string(from: convertedDate)
             self._date = currentDate
+            }
             
             let downloadedTemp = json[JSONConstants.main][JSONConstants.temperature].double
             self._currentTemp = (downloadedTemp! - 273.15).celsiusToFahr().rounded(toPlaces: 0)

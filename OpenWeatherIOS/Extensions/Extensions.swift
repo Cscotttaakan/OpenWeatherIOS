@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-// MARK: - Rounds the double to decimal places value
 extension Double {
     func rounded(toPlaces places:Int) -> Double {
         let divisor = pow(10.0, Double(places))
@@ -21,7 +20,6 @@ extension Double {
     }
 }
 
-// MARK: - Date Extension to covert date to a day in String type.
 extension Date {
     func dayOfTheWeek() -> String {
         let dateFormatter = DateFormatter()

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,14 +12,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherAppV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpenWeatherIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="TuU-cx-rfM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="TuU-cx-rfM">
                                 <rect key="frame" x="-50" y="-30" width="475" height="747"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SunnyCloud" translatesAutoresizingMaskIntoConstraints="NO" id="Mi6-yB-Vjj">
                                 <rect key="frame" x="123.5" y="77" width="128" height="128"/>
@@ -58,7 +56,7 @@
                                 <rect key="frame" x="0.0" y="255" width="375" height="412"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ForecastCell" id="eIZ-mr-TCS" customClass="ForecastCell" customModule="WeatherAppV2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ForecastCell" id="eIZ-mr-TCS" customClass="ForecastCell" customModule="OpenWeatherIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eIZ-mr-TCS" id="Ho3-fs-7aD">
@@ -108,18 +106,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Pep-Bm-w9d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1nQ-o1-bfL"/>
+                            <constraint firstItem="Pep-Bm-w9d" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3of-bO-FeN"/>
                             <constraint firstItem="FBT-rR-gX0" firstAttribute="top" secondItem="Mi6-yB-Vjj" secondAttribute="bottom" id="7Sj-z1-lQB"/>
                             <constraint firstItem="Vod-5v-gSQ" firstAttribute="top" secondItem="mRR-JC-dzU" secondAttribute="bottom" constant="8" id="8hy-8C-UgO"/>
                             <constraint firstItem="FBT-rR-gX0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8pC-G3-LnX"/>
+                            <constraint firstAttribute="bottom" secondItem="TuU-cx-rfM" secondAttribute="bottom" constant="-50" id="CtU-zV-lEc"/>
                             <constraint firstItem="Mi6-yB-Vjj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E6r-bd-UqD"/>
                             <constraint firstItem="mRR-JC-dzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EpK-vY-GPA"/>
+                            <constraint firstAttribute="trailing" secondItem="TuU-cx-rfM" secondAttribute="trailing" constant="-50" id="HKH-RK-v90"/>
                             <constraint firstItem="Pep-Bm-w9d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OwY-Ik-DS9"/>
                             <constraint firstItem="Pep-Bm-w9d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Uax-Jc-eRq"/>
                             <constraint firstItem="Pep-Bm-w9d" firstAttribute="top" secondItem="zm0-nR-BTR" secondAttribute="bottom" constant="50" id="W3P-tk-kOc"/>
                             <constraint firstItem="zm0-nR-BTR" firstAttribute="top" secondItem="FBT-rR-gX0" secondAttribute="bottom" id="Yaf-af-Kdm"/>
+                            <constraint firstItem="Pep-Bm-w9d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zjh-xt-CbB"/>
                             <constraint firstItem="Vod-5v-gSQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gBf-gl-Ze7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zm0-nR-BTR" secondAttribute="bottom" priority="250" constant="345" id="hQO-3o-Z3s"/>
+                            <constraint firstItem="TuU-cx-rfM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-30" id="jHA-lI-RLy"/>
                             <constraint firstItem="mRR-JC-dzU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="61" id="jsZ-BQ-JMJ"/>
+                            <constraint firstItem="TuU-cx-rfM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-50" id="oAS-wb-sch"/>
                             <constraint firstItem="Mi6-yB-Vjj" firstAttribute="top" secondItem="Vod-5v-gSQ" secondAttribute="bottom" constant="8" id="qgR-bD-UHF"/>
                             <constraint firstItem="zm0-nR-BTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sHz-CX-qLD"/>
                             <constraint firstItem="Pep-Bm-w9d" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tzG-8m-Whs"/>

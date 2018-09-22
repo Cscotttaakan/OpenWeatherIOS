@@ -45,9 +45,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         locationAuthCheck()
-        downloadForecastWeather {
-            print("Data Downloaded")
-        }
+        
     }
     
     func callDelegate(){
@@ -94,6 +92,9 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
                 self.updateUI()
                 
             }
+            downloadForecastWeather {
+                    print("Data Downloaded")
+                }
             }
             
             }else{ //User did not allow
