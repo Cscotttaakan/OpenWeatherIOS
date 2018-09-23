@@ -105,7 +105,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
         
         // MARK : Animations
         func applyEffect(){
-            specialEffect(view : specialBG , intensity: UIConstants.intensity)
+            
             specialEffect(view : weatherImage , intensity : -UIConstants.intensity)
         }
         
@@ -128,11 +128,26 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
         // MARK : UI
         func updateUI(){
             DispatchQueue.main.async {
+                UILabel.transition(with: self.cityName, duration: 1.0, options: .transitionCrossDissolve, animations: {
+                    self.cityName.text = self.currentWeather._cityName
+                }, completion : nil)
+                
                 self.cityName.text = self.currentWeather._cityName
                 self.currentCityTemp.text = "\(Int(self.currentWeather._currentTemp!))°"
                 self.currentDate.text = self.currentWeather._date
                 self.weatherType.text = self.currentWeather._weatherType
                 self.weatherImage.image = UIImage(named : self.currentWeather._weatherID!)
+                let id = String(self.currentWeather._weatherID!.last!)
+                
+                let toImage = UIImage(named:"\(id)g")
+                UIView.transition(with: self.specialBG,
+                                  duration: 1.0,
+                                  options: .transitionCrossDissolve,
+                                  animations: {
+                                    self.specialBG.image = toImage
+                },
+                                  completion: nil)
+                
             }
         }
         
@@ -147,7 +162,7 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UIConstants.forecastCellID) as! ForecastCell
         cell.configureCell(forecastData: forecastArray[indexPath.row])
-
+        
         return cell
     }
     
