@@ -44,7 +44,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        locationAuthCheck()
+        //locationAuthCheck()
         
     }
     
@@ -140,6 +140,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
                 let id = String(self.currentWeather._weatherID!.last!)
                 
                 let toImage = UIImage(named:"\(id)g")
+                print(id)
                 UIView.transition(with: self.specialBG,
                                   duration: 1.0,
                                   options: .transitionCrossDissolve,
@@ -150,7 +151,15 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
                 
             }
         }
+    
+    // MARK : Buttons
+    @IBAction func checkLocation(_ sender: UIButton) {
+        locationAuthCheck()
         
+    }
+    
+    
+    
 }
 
 extension ViewController : UITableViewDelegate , UITableViewDataSource {

@@ -15,6 +15,7 @@
 		E10C4A9921549451000A4F84 /* ForecastWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10C4A9821549451000A4F84 /* ForecastWeather.swift */; };
 		E13AFC5021542262004186EE /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13AFC4F21542262004186EE /* Extras.swift */; };
 		E13AFC5221542313004186EE /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13AFC5121542313004186EE /* CurrentWeather.swift */; };
+		E150DABE21581DB300698D37 /* UIButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E150DABD21581DB300698D37 /* UIButtonRounded.swift */; };
 		E17EE92D2153F0FA008DE1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EE92C2153F0FA008DE1D9 /* AppDelegate.swift */; };
 		E17EE92F2153F0FA008DE1D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EE92E2153F0FA008DE1D9 /* ViewController.swift */; };
 		E17EE9322153F0FA008DE1D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17EE9302153F0FA008DE1D9 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		E10C4A9821549451000A4F84 /* ForecastWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWeather.swift; sourceTree = "<group>"; };
 		E13AFC4F21542262004186EE /* Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
 		E13AFC5121542313004186EE /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		E150DABD21581DB300698D37 /* UIButtonRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonRounded.swift; sourceTree = "<group>"; };
 		E17EE9292153F0FA008DE1D9 /* OpenWeatherIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17EE92C2153F0FA008DE1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17EE92E2153F0FA008DE1D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				E10C4A9621548DBC000A4F84 /* ForecastCell.swift */,
+				E150DABD21581DB300698D37 /* UIButtonRounded.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				E10C4A9221542F2B000A4F84 /* Extensions.swift in Sources */,
 				E17EE92F2153F0FA008DE1D9 /* ViewController.swift in Sources */,
 				E13AFC5221542313004186EE /* CurrentWeather.swift in Sources */,
+				E150DABE21581DB300698D37 /* UIButtonRounded.swift in Sources */,
 				E10C4A9721548DBC000A4F84 /* ForecastCell.swift in Sources */,
 				E13AFC5021542262004186EE /* Extras.swift in Sources */,
 				E17EE92D2153F0FA008DE1D9 /* AppDelegate.swift in Sources */,

@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightLoadScreen" translatesAutoresizingMaskIntoConstraints="NO" id="7Yv-WI-6CP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightLoadScreen" translatesAutoresizingMaskIntoConstraints="NO" id="7Yv-WI-6CP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -26,8 +26,8 @@
                         <constraints>
                             <constraint firstItem="7Yv-WI-6CP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1Hr-sz-2d1"/>
                             <constraint firstItem="7Yv-WI-6CP" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="JHf-UF-KCB"/>
-                            <constraint firstAttribute="trailing" secondItem="7Yv-WI-6CP" secondAttribute="trailing" id="dad-Jd-Oh5"/>
-                            <constraint firstItem="7Yv-WI-6CP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="zbo-MU-I90"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Yv-WI-6CP" secondAttribute="trailing" id="dad-Jd-Oh5"/>
+                            <constraint firstItem="7Yv-WI-6CP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zbo-MU-I90"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

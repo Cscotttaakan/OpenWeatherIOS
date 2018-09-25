@@ -72,7 +72,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SunnyCloud" translatesAutoresizingMaskIntoConstraints="NO" id="AXI-Z2-ZZl">
-                                                    <rect key="frame" x="317" y="4.5" width="35" height="35"/>
+                                                    <rect key="frame" x="325" y="4.5" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="aFp-Uh-7Yc"/>
                                                         <constraint firstAttribute="width" constant="35" id="dI4-nL-DdV"/>
@@ -85,7 +85,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jov-jM-PkY">
-                                                    <rect key="frame" x="166" y="9" width="27" height="26"/>
+                                                    <rect key="frame" x="174" y="9" width="27" height="26"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -116,34 +116,49 @@
                                     </mask>
                                 </variation>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXc-Lb-w5x" customClass="UIButtonRounded" customModule="OpenWeatherIOS" customModuleProvider="target">
+                                <rect key="frame" x="327" y="36" width="32" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="rC8-As-c1B"/>
+                                    <constraint firstAttribute="height" constant="32" id="rhr-Hf-lEA"/>
+                                </constraints>
+                                <state key="normal" image="Location"/>
+                                <connections>
+                                    <action selector="checkLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZe-l7-r7k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="VXc-Lb-w5x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="1lp-vN-qaZ"/>
                             <constraint firstItem="Pep-Bm-w9d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1nQ-o1-bfL">
                                 <variation key="heightClass=compact" constant="-150"/>
                             </constraint>
+                            <constraint firstItem="VXc-Lb-w5x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="750" constant="327" id="2R0-ld-p39"/>
                             <constraint firstItem="Pep-Bm-w9d" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3of-bO-FeN"/>
                             <constraint firstItem="FBT-rR-gX0" firstAttribute="top" secondItem="Mi6-yB-Vjj" secondAttribute="bottom" constant="16" id="7Sj-z1-lQB"/>
                             <constraint firstItem="Vod-5v-gSQ" firstAttribute="top" secondItem="mRR-JC-dzU" secondAttribute="bottom" constant="8" id="8hy-8C-UgO"/>
                             <constraint firstItem="FBT-rR-gX0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8pC-G3-LnX"/>
-                            <constraint firstAttribute="bottom" secondItem="TuU-cx-rfM" secondAttribute="bottom" id="CtU-zV-lEc"/>
                             <constraint firstItem="Mi6-yB-Vjj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E6r-bd-UqD"/>
                             <constraint firstItem="mRR-JC-dzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EpK-vY-GPA"/>
-                            <constraint firstAttribute="trailing" secondItem="TuU-cx-rfM" secondAttribute="trailing" id="HKH-RK-v90"/>
                             <constraint firstItem="Pep-Bm-w9d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OwY-Ik-DS9">
                                 <variation key="heightClass=compact" constant="150"/>
                             </constraint>
+                            <constraint firstItem="TuU-cx-rfM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YCP-Wx-Npz"/>
                             <constraint firstItem="zm0-nR-BTR" firstAttribute="top" secondItem="FBT-rR-gX0" secondAttribute="bottom" id="Yaf-af-Kdm"/>
                             <constraint firstItem="Pep-Bm-w9d" firstAttribute="top" secondItem="Mi6-yB-Vjj" secondAttribute="bottom" constant="100" id="ZzC-uD-n7i">
                                 <variation key="heightClass=compact" constant="100"/>
                             </constraint>
+                            <constraint firstItem="TuU-cx-rfM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="doA-rc-wr9"/>
                             <constraint firstItem="Vod-5v-gSQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gBf-gl-Ze7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zm0-nR-BTR" secondAttribute="bottom" priority="250" constant="345" id="hQO-3o-Z3s"/>
-                            <constraint firstItem="TuU-cx-rfM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jHA-lI-RLy"/>
                             <constraint firstItem="mRR-JC-dzU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="61" id="jsZ-BQ-JMJ"/>
-                            <constraint firstItem="TuU-cx-rfM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oAS-wb-sch"/>
                             <constraint firstItem="Mi6-yB-Vjj" firstAttribute="top" secondItem="Vod-5v-gSQ" secondAttribute="bottom" constant="16" id="qgR-bD-UHF"/>
                             <constraint firstItem="zm0-nR-BTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sHz-CX-qLD"/>
+                            <constraint firstItem="TuU-cx-rfM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tht-c3-afM"/>
+                            <constraint firstItem="VXc-Lb-w5x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="upB-Fo-tBA"/>
+                            <constraint firstItem="TuU-cx-rfM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wzg-vP-6QZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -163,6 +178,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Location" width="64" height="64"/>
         <image name="SunnyCloud" width="570" height="550"/>
         <image name="nightLoadScreen" width="3264" height="4928"/>
     </resources>
